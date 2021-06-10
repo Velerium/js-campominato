@@ -21,8 +21,8 @@ function promptFunct() {
     return userNum;
 }
 
-var totalNumbers = 60;
-var maxCpuNumbers = 15;
+var totalNumbers = 100;
+var maxCpuNumbers = 16;
 
 var maxUserNumbers = totalNumbers - maxCpuNumbers;
 
