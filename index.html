@@ -29,6 +29,30 @@
                     <h3>An alpha version of the real thing! </h3>
                 </div>
 
+                <div class="difficulty">
+                    <div>Want me to go easy on you? You decide!</div>
+                    <form>
+                        <span>
+                            <input id="easy" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="50; 5">
+                            <label for="easy">Easy</label>
+                        </span>
+                        <span>
+                            <input id="normal" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="70; 15">
+                            <label for="normal">Normal</label>
+                        </span>
+                        <span>
+                            <input id="hard" class="difficulty"
+                                   name="difficulty" type="radio"
+                                   value="90; 25">
+                            <label for="hard">Hard</label>
+                        </span>
+                    </form>
+                </div>
+
                 <div class="progress-bar">
                     <div>Your progress:</div>
                     <div>
@@ -37,7 +61,7 @@
                 </div>
 
                 <div class="user-numbers">
-                    <div>Your numbers:</div>
+                    <div>Your "safe" numbers:</div>
                     <span id="output-numbers"></span>
                 </div>
 
@@ -51,7 +75,7 @@
                 <div class="score"></div>
 
                 <div class="buttons">
-                    <button onclick="location.reload()">Play again!</button>
+                    <button onclick="mineGame()">Play!</button>
                 </div>
 
             </div>
