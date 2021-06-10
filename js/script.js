@@ -73,13 +73,16 @@ function mineGame() {  // All this just to bind it to a button...
             
     }
 
+    var comment1 = Math.floor(maxUserNumbers/5);
+    var comment2 = Math.floor(maxUserNumbers/2);
+
     if (!flag) {
         comment.innerHTML = 'You should pick a difficulty before playing!';
-    } else if (userNumbers.length < 5) {
+    } else if (userNumbers.length < comment1) {
         comment.innerHTML = 'Damn. You tripped a mine so early!';
-    } else if (userNumbers.length >= 5 && userNumbers.length < 20) {
+    } else if (userNumbers.length >= comment1 && userNumbers.length < comment2) {
         comment.innerHTML = "Oof. That wasn't too bad!";
-    } else if (userNumbers.length >= 20 && userNumbers.length < maxUserNumbers) {
+    } else if (userNumbers.length >= comment2 && userNumbers.length < maxUserNumbers) {
         comment.innerHTML = "Now we're getting somewhere! Keep it up!";
     } else if (userNumbers.length === maxUserNumbers) {
         progress.style.backgroundColor = 'yellow';
